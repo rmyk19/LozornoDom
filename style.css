@@ -219,7 +219,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .ca-email{margin-top:4px}
 
 /* ---------- FOOTER ---------- */
-.ft{background:#0d0c08;color:rgba(255,255,255,.4);display:flex;justify-content:space-between;padding:24px var(--gut);font-size:12px;letter-spacing:.03em}
+.ft{background:#0d0c08;color:rgba(255,255,255,.4);display:flex;justify-content:space-between;padding:24px var(--gut);font-size:12px;letter-spacing:.03em;position:relative}
+.ft::after{content:'';position:absolute;left:0;right:0;bottom:-50vh;height:50vh;background:inherit}
 
 /* ---------- LIGHTBOX ---------- */
 .lightbox{position:fixed;inset:0;z-index:500;background:rgba(8,7,5,.97);display:none;flex-direction:column;align-items:center;justify-content:center}
@@ -314,7 +315,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   .vy-card.open p{max-height:120px;opacity:1;margin-top:8px}
   .vy-card h4{font-size:15px;min-height:unset;align-items:flex-start;margin-bottom:0}
   .vy-ico{width:22px;height:22px;margin-bottom:8px}
-  .loc-intro{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14px}
+  .loc-intro{display:none}
   .loc-cats{grid-template-columns:1fr}
   .loc-map-label{opacity:1;transform:none}
   .ext-strip{padding-bottom:var(--sp)}
