@@ -407,3 +407,21 @@ window.addEventListener('load', () => {
   if (location.hash) history.replaceState(null, '', location.pathname);
   window.scrollTo(0, 0);
 });
+
+
+
+// Reload always lands on top
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+  if (location.hash) history.replaceState(null, '', location.pathname);
+  window.scrollTo(0, 0);
+});
+
+// iOS status-bar color: sky-blue on hero, light when scrolled
+const tcMeta = document.querySelector('meta[name="theme-color"]');
+const updateTC = () => {
+  if (!tcMeta) return;
+  tcMeta.setAttribute('content', window.scrollY > window.innerHeight * 0.6 ? '#faf8f4' : '#356da0');
+};
+window.addEventListener('scroll', updateTC, { passive: true });
+updateTC();
