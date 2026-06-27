@@ -220,7 +220,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 
 /* ---------- FOOTER ---------- */
 .ft{background:#0d0c08;color:rgba(255,255,255,.4);display:flex;justify-content:space-between;padding:24px var(--gut);font-size:12px;letter-spacing:.03em;position:relative}
-.ft::after{content:'';position:absolute;left:0;right:0;bottom:-50vh;height:50vh;background:inherit}
 
 /* ---------- LIGHTBOX ---------- */
 .lightbox{position:fixed;inset:0;z-index:500;background:rgba(8,7,5,.97);display:none;flex-direction:column;align-items:center;justify-content:center}
