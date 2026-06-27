@@ -417,11 +417,4 @@ window.addEventListener('load', () => {
   window.scrollTo(0, 0);
 });
 
-// iOS status-bar color: sky-blue on hero, light when scrolled
-const tcMeta = document.querySelector('meta[name="theme-color"]');
-const updateTC = () => {
-  if (!tcMeta) return;
-  tcMeta.setAttribute('content', window.scrollY > window.innerHeight * 0.6 ? '#faf8f4' : '#356e94');
-};
-window.addEventListener('scroll', updateTC, { passive: true });
-updateTC();
+
