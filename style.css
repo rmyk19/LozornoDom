@@ -104,14 +104,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;max-height:560px;margin-bottom:24px}
 .fv-img{width:100%;height:100%;object-fit:contain;transition:opacity .35s ease,transform .35s ease;padding:0;transform-origin:center}
 .fv-img.fading{opacity:0}
-@media(min-width:901px){
-  .intro-wide{grid-template-columns:1.55fr 1fr;column-gap:clamp(32px,4vw,56px)}
-  .intro-top,.intro-desc{grid-column:1 / -1}
-  .intro-visual{grid-column:1}
-  .intro-side{grid-column:2}
-  .intro-facts{grid-template-columns:repeat(2,1fr);margin-bottom:24px}
-  .intro-facts-label{display:block}
-}
 
 /* ---------- VÝHODY BÝVANIA ---------- */
 .vyhody{padding-top:var(--sp);padding-bottom:var(--sp)}
