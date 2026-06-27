@@ -198,9 +198,9 @@ document.querySelectorAll('[data-full]').forEach(el=>{
 
 // ---------- FLOOR PLAN VIEWER ----------
 const FLOOR_IMAGES = {
-  '1-3d':   'img/podorys-1np-3d.png',
+  '1-3d':   'img/podorys-1np-3d.jpg',
   '1-plan': 'img/podorys-1np-plan.jpg',
-  '2-3d':   'img/podorys-2np-3d.png',
+  '2-3d':   'img/podorys-2np-3d.jpg',
   '2-plan': 'img/podorys-2np-plan.jpg'
 };
 const FLOOR_ALT = {

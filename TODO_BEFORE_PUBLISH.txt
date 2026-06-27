@@ -1,0 +1,18 @@
+Pred zverejnením doplniť:
+
+1. Úžitková plocha a veľkosť pozemku
+   - index.html: nájdi "m² úžitkové" a "m² pozemok" a nahraď hodnoty "—" reálnymi číslami.
+
+2. Cena
+   - v hero sekcii je teraz uvedené "Info / cena". Ak chceš cenu zobrazovať, nahraď to konkrétnou sumou.
+
+3. Kontakt
+   - index.html: nahraď "Kontakt na predajcu" menom alebo názvom realitky.
+   - nahraď telefón +421 9__ ___ ___.
+
+4. Kontaktný formulár
+   - vo formulári je action="https://formspree.io/f/REPLACE_FORM_ID".
+   - treba vytvoriť Formspree formulár a vložiť skutočné ID, inak formulár nebude odosielať správy.
+
+5. Mapa
+   - momentálne je nastavené všeobecné "Lozorno, Slovakia". Pre presnú polohu vlož Google Maps embed pre Agátová 66b, ak ju chceš ukazovať.
