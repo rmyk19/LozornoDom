@@ -399,3 +399,11 @@ roomPhoto.style.transition='opacity .4s';
 showRoom('obyvacka');
 initScrollReveal();
 updateScrollProgress();
+
+
+// Reload always lands on top
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+  if (location.hash) history.replaceState(null, '', location.pathname);
+  window.scrollTo(0, 0);
+});
