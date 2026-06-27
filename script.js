@@ -421,7 +421,7 @@ window.addEventListener('load', () => {
 const tcMeta = document.querySelector('meta[name="theme-color"]');
 const updateTC = () => {
   if (!tcMeta) return;
-  tcMeta.setAttribute('content', window.scrollY > window.innerHeight * 0.6 ? '#faf8f4' : '#356da0');
+  tcMeta.setAttribute('content', window.scrollY > window.innerHeight * 0.6 ? '#faf8f4' : '#356e94');
 };
 window.addEventListener('scroll', updateTC, { passive: true });
 updateTC();
